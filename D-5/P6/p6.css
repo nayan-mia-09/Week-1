@@ -113,3 +113,41 @@ body{
 .tooltip-3:hover .tooltip-text-3{
     visibility: visible;
 }
+
+/* Left Tooltip */
+
+.tooltip-4{
+    margin-top: 150px;
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text-4{
+    padding: 6px;
+    background-color: #333;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    left: -120px;
+    bottom: -11px;
+    visibility: hidden;
+}
+
+.tooltip-text-4::after{
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid #333;
+}
+
+.tooltip-4:hover .tooltip-text-4{
+    visibility: visible;
+}
