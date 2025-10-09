@@ -37,3 +37,41 @@ body{
 .tooltip:hover .tooltip-text{
     visibility: visible;
 }
+
+/* Right tooltip */
+
+.tooltip-2{
+    margin-left: 150px;
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text-2{
+    padding: 6px;
+    background-color: #333;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    right: -120px;
+    bottom: -7px;
+    visibility: hidden;
+}
+
+.tooltip-text-2::after{
+    content: '';
+    position: absolute;
+    left: -5px;
+    bottom: 10px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 10px solid #333;
+}
+
+.tooltip-2:hover .tooltip-text-2{
+    visibility: visible;
+}
